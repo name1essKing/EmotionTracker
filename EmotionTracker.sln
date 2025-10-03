@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmotionTracker.ui", "EmotionTracker.UI\EmotionTracker.ui.csproj", "{21D41D07-1468-4722-ACCC-5E350A660E70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmotionTracker.client", "EmotionTracker.Client\EmotionTracker.client.csproj", "{DE352C46-9033-4A7E-9F47-406A413DC5A5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{21D41D07-1468-4722-ACCC-5E350A660E70} = {21D41D07-1468-4722-ACCC-5E350A660E70}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{21D41D07-1468-4722-ACCC-5E350A660E70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21D41D07-1468-4722-ACCC-5E350A660E70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21D41D07-1468-4722-ACCC-5E350A660E70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21D41D07-1468-4722-ACCC-5E350A660E70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE352C46-9033-4A7E-9F47-406A413DC5A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE352C46-9033-4A7E-9F47-406A413DC5A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE352C46-9033-4A7E-9F47-406A413DC5A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE352C46-9033-4A7E-9F47-406A413DC5A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E315A072-8644-4584-A866-E6131320B201}
+	EndGlobalSection
+EndGlobal

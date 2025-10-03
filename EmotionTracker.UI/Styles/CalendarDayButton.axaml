@@ -1,0 +1,62 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Design.PreviewWith>
+		<Border Padding="20">
+			<StackPanel>
+				<CalendarDayButton Content="Test1" Classes="CalendarDayButton"/>
+				<CalendarDayButton Content="Test2" Classes="happy"/>
+				<CalendarDayButton Content="Test3" Classes="neutral"/>
+				<CalendarDayButton Content="Test4" Classes="sad"/>
+			</StackPanel>
+		</Border>
+	</Design.PreviewWith>
+
+	<!-- Базовый стиль для кнопки -->
+	<Style Selector="CalendarDayButton">
+		<Setter Property="Background"       Value="Transparent"/>
+		<Setter Property="Foreground"       Value="White"/>
+		<Setter Property="CornerRadius"     Value="4"/>
+
+		<Style Selector="^:selected /template/ Border#Border">
+			<Setter Property="BorderBrush"		Value="#007FFF" />
+		</Style>
+	</Style>
+
+	<!-- Стили для эмоций -->
+	<!-- happy -->
+	<Style Selector="CalendarDayButton.happy">
+		<Setter Property="Background" Value="#2E7D32"/>
+
+		<Style Selector="^:pointerover /template/ Border#Root">
+			<Setter Property="Background"		 Value="LightGreen" />
+		</Style>
+
+		<Style Selector="^:pressed  /template/ Border#Root">
+			<Setter Property="Background"		 Value="#006400" />
+		</Style>
+	</Style>
+	<!-- neutral -->
+	<Style Selector="CalendarDayButton.neutral">
+		<Setter Property="Background" Value="Yellow"/>
+
+		<Style Selector="^:pointerover /template/ Border#Root">
+			<Setter Property="Background"		 Value="#FFFF66" />
+		</Style>
+
+		<Style Selector="^:pressed  /template/ Border#Root">
+			<Setter Property="Background"		 Value="#CCCC00" />
+		</Style>
+	</Style>
+	<!-- sad -->
+	<Style Selector="CalendarDayButton.sad">
+		<Setter Property="Background" Value="Red"/>
+
+		<Style Selector="^:pointerover /template/ Border#Root">
+			<Setter Property="Background"		 Value="#FF6666" />
+		</Style>
+
+		<Style Selector="^:pressed  /template/ Border#Root">
+			<Setter Property="Background"		 Value="#CC0000" />
+		</Style>
+	</Style>
+</Styles>

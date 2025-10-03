@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<RootNamespace>EmotionTracker.UI</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Avalonia.Diagnostics" Version="11.0.0" />
+		<PackageReference Include="Avalonia.Fonts.Inter" Version="11.0.0" />
+		<PackageReference Include="Avalonia.ReactiveUI" Version="11.0.0" />
+		<PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.0" />
+		<PackageReference Include="Avalonia.Xaml.Interactivity" Version="11.0.10.9" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Controls\" />
+		<Folder Include="Resources\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<UpToDateCheckInput Remove="Styles\Button.axaml" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<AvaloniaResource Include="Styles/Styles.axaml" />
+	</ItemGroup>
+
+
+</Project>

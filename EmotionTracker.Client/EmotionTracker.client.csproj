@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<OutputType>WinExe</OutputType>
+		<AvaloniaUseCompiledBindingsByDefault>false</AvaloniaUseCompiledBindingsByDefault>
+		<Platforms>AnyCPU</Platforms>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<RootNamespace>EmotionTracker.Client</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Autofac" Version="8.0.0" />
+		<PackageReference Include="Avalonia.Desktop" Version="11.0.0" />
+		<PackageReference Include="Avalonia.Diagnostics" Version="11.0.0" />
+		<PackageReference Include="Avalonia.Fonts.Inter" Version="11.0.0" />
+		<PackageReference Include="Avalonia.ReactiveUI" Version="11.0.0" />
+		<PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.0" />
+		<PackageReference Include="Avalonia.Xaml.Interactivity" Version="11.0.10.9" />
+		<PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="11.0.0" />
+
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\EmotionTracker.UI\EmotionTracker.UI.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="Views\EmotionTracker\EmotionTrackerView.axaml.cs">
+		  <DependentUpon>EmotionTrackerView.axaml</DependentUpon>
+		</Compile>
+		<Compile Update="Views\EmotionTracker\EmotionTrackerView.axaml.cs">
+		  <DependentUpon>EmotionTrackerView.axaml</DependentUpon>
+		</Compile>
+		<Compile Update="Views\MainWindowView.axaml.cs">
+			<DependentUpon>MainWindowView.axaml</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Services\" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,55 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <Design.PreviewWith>
+    <Border Padding="20">
+      <!-- Add Controls for Previewer Here -->
+    </Border>
+  </Design.PreviewWith>
+
+  <!-- Add Styles Here -->
+	<!-- Базовый стиль для кнопки -->
+	<Style Selector="MenuItem">
+		<Setter Property="Background"       Value="Transparent"/>
+		<Setter Property="Foreground"       Value="#E0E0E0"/>
+		<Setter Property="CornerRadius"     Value="4"/>
+		<Setter Property="HorizontalAlignment"          Value="Stretch"/>
+	</Style>
+
+	<!-- Стили для эмоций -->
+	<!-- happy -->
+	<Style Selector="MenuItem.happy">
+		<Setter Property="Foreground" Value="Green"/>
+
+		<Style Selector="^:pointerover /template/ Border#Root">
+			<Setter Property="Background"		 Value="LightGreen" />
+		</Style>
+
+		<Style Selector="^:pressed  /template/ Border#Root">
+			<Setter Property="Background"		 Value="#006400" />
+		</Style>
+	</Style>
+	<!-- neutral -->
+	<Style Selector="MenuItem.neutral">
+		<Setter Property="Foreground" Value="Yellow"/>
+
+		<Style Selector="^:pointerover /template/ Border#Root">
+			<Setter Property="Background"		 Value="#FFFF66" />
+		</Style>
+
+		<Style Selector="^:pressed  /template/ Border#Root">
+			<Setter Property="Background"		 Value="#CCCC00" />
+		</Style>
+	</Style>
+	<!-- sad -->
+	<Style Selector="MenuItem.sad">
+		<Setter Property="Foreground" Value="Red"/>
+
+		<Style Selector="^:pointerover /template/ Border#Root">
+			<Setter Property="Background"		 Value="#FF6666" />
+		</Style>
+
+		<Style Selector="^:pressed  /template/ Border#Root">
+			<Setter Property="Background"		 Value="#CC0000" />
+		</Style>
+	</Style>
+</Styles>
