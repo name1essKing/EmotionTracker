@@ -1,0 +1,14 @@
+.vs/
+*.db
+*.pdb
+bin/
+obj/
+*.cache
+*.sourcelink.json
+*.dll
+*.exe
+**/*.dll
+**/*.json
+**/*.cache
+**/Debug/
+**/Release/
