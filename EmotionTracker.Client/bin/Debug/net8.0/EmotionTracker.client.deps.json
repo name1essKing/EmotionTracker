@@ -1002,9 +1002,9 @@
           "Avalonia.Xaml.Interactivity": "11.0.10.9"
         },
         "runtime": {
-          "EmotionTracker.UI.dll": {
+          "EmotionTracker.ui.dll": {
             "assemblyVersion": "1.0.0",
-            "fileVersion": ""
+            "fileVersion": "1.0.0.0"
           }
         }
       }

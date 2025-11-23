@@ -12,45 +12,6 @@
 	<Design.DataContext>
 		<local:EmotionTrackerViewModel/>
 	</Design.DataContext>
-	<!-- конветоры цветов по эмоциям (happy, sad, neutral -->
-	<UserControl.Resources>
-		<!--happy converter-->
-		<converters:SwitchConverter x:Key="EmotionToHappyConverter" 
-									Default="False">
-			<converters:Case Key="{x:Static tracker:EmotionEnum.Happy}" 
-							 Value="True"/>
-			<converters:Case Key="{x:Static tracker:EmotionEnum.Neutral}" 
-							 Value="False"/>
-			<converters:Case Key="{x:Static tracker:EmotionEnum.Sad}" 
-							 Value="False"/>
-			<converters:Case Key="{x:Static tracker:EmotionEnum.None}" 
-							 Value="False"/>
-		</converters:SwitchConverter>
-		<!--neutral converter-->
-		<converters:SwitchConverter x:Key="EmotionToNeutralConverter" 
-									Default="False">
-			<converters:Case Key="{x:Static tracker:EmotionEnum.Happy}" 
-							 Value="False"/>
-			<converters:Case Key="{x:Static tracker:EmotionEnum.Neutral}" 
-							 Value="True"/>
-			<converters:Case Key="{x:Static tracker:EmotionEnum.Sad}" 
-							 Value="False"/>
-			<converters:Case Key="{x:Static tracker:EmotionEnum.None}" 
-							 Value="False"/>
-		</converters:SwitchConverter>
-		<!--sad converter-->
-		<converters:SwitchConverter x:Key="EmotionToSadConverter" 
-									Default="False">
-			<converters:Case Key="{x:Static tracker:EmotionEnum.Happy}" 
-							 Value="False"/>
-			<converters:Case Key="{x:Static tracker:EmotionEnum.Neutral}" 
-							 Value="False"/>
-			<converters:Case Key="{x:Static tracker:EmotionEnum.Sad}" 
-							 Value="True"/>
-			<converters:Case Key="{x:Static tracker:EmotionEnum.None}" 
-							 Value="False"/>
-		</converters:SwitchConverter>
-	</UserControl.Resources>
 
 	<Grid RowDefinitions="*" ColumnDefinitions="*">
 		<!-- Календарь с контекстным меню -->

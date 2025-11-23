@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EmotionTracker.client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+83fafcfc6cd678bc16c9d8d83a923d4e049f482d")]
 [assembly: System.Reflection.AssemblyProductAttribute("EmotionTracker.client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EmotionTracker.client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

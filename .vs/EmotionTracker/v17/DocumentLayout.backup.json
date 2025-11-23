@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DE352C46-9033-4A7E-9F47-406A413DC5A5}|EmotionTracker.Client\\EmotionTracker.client.csproj|c:\\users\\d4nym\\source\\repos\\emotiontracker\\emotiontracker.client\\behaviors\\calendardaystateupdatebehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE352C46-9033-4A7E-9F47-406A413DC5A5}|EmotionTracker.Client\\EmotionTracker.client.csproj|solutionrelative:emotiontracker.client\\behaviors\\calendardaystateupdatebehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21D41D07-1468-4722-ACCC-5E350A660E70}|EmotionTracker.UI\\EmotionTracker.ui.csproj|c:\\users\\d4nym\\source\\repos\\emotiontracker\\emotiontracker.ui\\extensions\\disposeextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21D41D07-1468-4722-ACCC-5E350A660E70}|EmotionTracker.UI\\EmotionTracker.ui.csproj|solutionrelative:emotiontracker.ui\\extensions\\disposeextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE352C46-9033-4A7E-9F47-406A413DC5A5}|EmotionTracker.Client\\EmotionTracker.client.csproj|c:\\users\\d4nym\\source\\repos\\emotiontracker\\emotiontracker.client\\views\\emotiontracker\\emotiontrackerviewmodel.commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE352C46-9033-4A7E-9F47-406A413DC5A5}|EmotionTracker.Client\\EmotionTracker.client.csproj|solutionrelative:emotiontracker.client\\views\\emotiontracker\\emotiontrackerviewmodel.commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DE352C46-9033-4A7E-9F47-406A413DC5A5}|EmotionTracker.Client\\EmotionTracker.client.csproj|c:\\users\\d4nym\\source\\repos\\emotiontracker\\emotiontracker.client\\views\\emotiontracker\\emotiontrackerview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{DE352C46-9033-4A7E-9F47-406A413DC5A5}|EmotionTracker.Client\\EmotionTracker.client.csproj|solutionrelative:emotiontracker.client\\views\\emotiontracker\\emotiontrackerview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
@@ -25,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DE352C46-9033-4A7E-9F47-406A413DC5A5}|EmotionTracker.Client\\EmotionTracker.client.csproj|c:\\users\\d4nym\\source\\repos\\emotiontracker\\emotiontracker.client\\views\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DE352C46-9033-4A7E-9F47-406A413DC5A5}|EmotionTracker.Client\\EmotionTracker.client.csproj|solutionrelative:emotiontracker.client\\views\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DE352C46-9033-4A7E-9F47-406A413DC5A5}|EmotionTracker.Client\\EmotionTracker.client.csproj|c:\\users\\d4nym\\source\\repos\\emotiontracker\\emotiontracker.client\\views\\emotiontracker\\emotiontrackerviewmodel.commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DE352C46-9033-4A7E-9F47-406A413DC5A5}|EmotionTracker.Client\\EmotionTracker.client.csproj|solutionrelative:emotiontracker.client\\views\\emotiontracker\\emotiontrackerviewmodel.commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{21D41D07-1468-4722-ACCC-5E350A660E70}|EmotionTracker.UI\\EmotionTracker.ui.csproj|c:\\users\\d4nym\\source\\repos\\emotiontracker\\emotiontracker.ui\\styles\\menuitem.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
@@ -57,10 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{21D41D07-1468-4722-ACCC-5E350A660E70}|EmotionTracker.UI\\EmotionTracker.ui.csproj|c:\\users\\d4nym\\source\\repos\\emotiontracker\\emotiontracker.ui\\styles\\styles.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{21D41D07-1468-4722-ACCC-5E350A660E70}|EmotionTracker.UI\\EmotionTracker.ui.csproj|solutionrelative:emotiontracker.ui\\styles\\styles.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21D41D07-1468-4722-ACCC-5E350A660E70}|EmotionTracker.UI\\EmotionTracker.ui.csproj|c:\\users\\d4nym\\source\\repos\\emotiontracker\\emotiontracker.ui\\converters\\switchconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21D41D07-1468-4722-ACCC-5E350A660E70}|EmotionTracker.UI\\EmotionTracker.ui.csproj|solutionrelative:emotiontracker.ui\\converters\\switchconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DE352C46-9033-4A7E-9F47-406A413DC5A5}|EmotionTracker.Client\\EmotionTracker.client.csproj|c:\\users\\d4nym\\source\\repos\\emotiontracker\\emotiontracker.client\\views\\mainwindowviewmodel.commands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -118,15 +122,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
+              "Title": "CalendarDayStateUpdateBehavior.cs",
+              "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.Client\\Behaviors\\CalendarDayStateUpdateBehavior.cs",
+              "RelativeDocumentMoniker": "EmotionTracker.Client\\Behaviors\\CalendarDayStateUpdateBehavior.cs",
+              "ToolTip": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.Client\\Behaviors\\CalendarDayStateUpdateBehavior.cs",
+              "RelativeToolTip": "EmotionTracker.Client\\Behaviors\\CalendarDayStateUpdateBehavior.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T03:53:11.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DisposeExtension.cs",
+              "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.UI\\Extensions\\DisposeExtension.cs",
+              "RelativeDocumentMoniker": "EmotionTracker.UI\\Extensions\\DisposeExtension.cs",
+              "ToolTip": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.UI\\Extensions\\DisposeExtension.cs",
+              "RelativeToolTip": "EmotionTracker.UI\\Extensions\\DisposeExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-23T03:51:59.164Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "MenuItem.axaml",
               "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.UI\\Styles\\MenuItem.axaml",
               "RelativeDocumentMoniker": "EmotionTracker.UI\\Styles\\MenuItem.axaml",
@@ -137,19 +171,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "CalendarDayButton.axaml",
               "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.UI\\Styles\\CalendarDayButton.axaml",
               "RelativeDocumentMoniker": "EmotionTracker.UI\\Styles\\CalendarDayButton.axaml",
               "ToolTip": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.UI\\Styles\\CalendarDayButton.axaml",
               "RelativeToolTip": "EmotionTracker.UI\\Styles\\CalendarDayButton.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-08T19:44:51.862Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-08T19:44:51.862Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "MainWindowView.axaml",
               "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.Client\\Views\\MainWindowView.axaml",
               "RelativeDocumentMoniker": "EmotionTracker.Client\\Views\\MainWindowView.axaml",
@@ -160,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "EmotionTrackerViewModel.cs",
               "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.Client\\Views\\EmotionTracker\\EmotionTrackerViewModel.cs",
               "RelativeDocumentMoniker": "EmotionTracker.Client\\Views\\EmotionTracker\\EmotionTrackerViewModel.cs",
@@ -172,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "EmotionTrackerView.axaml",
               "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.Client\\Views\\EmotionTracker\\EmotionTrackerView.axaml",
               "RelativeDocumentMoniker": "EmotionTracker.Client\\Views\\EmotionTracker\\EmotionTrackerView.axaml",
@@ -184,19 +217,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "EmotionTrackerViewModel.Commands.cs",
               "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.Client\\Views\\EmotionTracker\\EmotionTrackerViewModel.Commands.cs",
               "RelativeDocumentMoniker": "EmotionTracker.Client\\Views\\EmotionTracker\\EmotionTrackerViewModel.Commands.cs",
               "ToolTip": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.Client\\Views\\EmotionTracker\\EmotionTrackerViewModel.Commands.cs",
               "RelativeToolTip": "EmotionTracker.Client\\Views\\EmotionTracker\\EmotionTrackerViewModel.Commands.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowDAAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-02T22:10:45.706Z"
+              "WhenOpened": "2025-07-02T22:10:45.706Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "EmotionItem.cs",
               "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.Client\\Views\\EmotionTracker\\EmotionItem.cs",
               "RelativeDocumentMoniker": "EmotionTracker.Client\\Views\\EmotionTracker\\EmotionItem.cs",
@@ -208,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Calendar.axaml",
               "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.UI\\Styles\\Calendar.axaml",
               "RelativeDocumentMoniker": "EmotionTracker.UI\\Styles\\Calendar.axaml",
@@ -219,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Styles.axaml",
               "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.UI\\Styles\\Styles.axaml",
               "RelativeDocumentMoniker": "EmotionTracker.UI\\Styles\\Styles.axaml",
@@ -230,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "EmotionEnum.cs",
               "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.Client\\Views\\EmotionTracker\\EmotionEnum.cs",
               "RelativeDocumentMoniker": "EmotionTracker.Client\\Views\\EmotionTracker\\EmotionEnum.cs",
@@ -242,7 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "App.axaml",
               "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.Client\\App.axaml",
               "RelativeDocumentMoniker": "EmotionTracker.Client\\App.axaml",
@@ -254,7 +288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "EmotionTracker.client.csproj",
               "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.Client\\EmotionTracker.client.csproj",
               "RelativeDocumentMoniker": "EmotionTracker.Client\\EmotionTracker.client.csproj",
@@ -262,24 +296,11 @@
               "RelativeToolTip": "EmotionTracker.Client\\EmotionTracker.client.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-02T17:07:11.952Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-02T17:07:11.952Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "SwitchConverter.cs",
-              "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.UI\\Converters\\SwitchConverter.cs",
-              "RelativeDocumentMoniker": "EmotionTracker.UI\\Converters\\SwitchConverter.cs",
-              "ToolTip": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.UI\\Converters\\SwitchConverter.cs",
-              "RelativeToolTip": "EmotionTracker.UI\\Converters\\SwitchConverter.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAqwFEAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T21:19:57.969Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.Client\\Program.cs",
               "RelativeDocumentMoniker": "EmotionTracker.Client\\Program.cs",
@@ -291,7 +312,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "App.axaml.cs",
               "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.Client\\App.axaml.cs",
               "RelativeDocumentMoniker": "EmotionTracker.Client\\App.axaml.cs",
@@ -303,7 +324,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "MainWindowViewModel.cs",
               "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.Client\\Views\\MainWindowViewModel.cs",
               "RelativeDocumentMoniker": "EmotionTracker.Client\\Views\\MainWindowViewModel.cs",
@@ -315,7 +336,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "MainWindowViewModel.Commands.cs",
               "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.Client\\Views\\MainWindowViewModel.Commands.cs",
               "RelativeDocumentMoniker": "EmotionTracker.Client\\Views\\MainWindowViewModel.Commands.cs",
@@ -327,7 +348,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "EmotionTrackerView.axaml.cs",
               "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.Client\\Views\\EmotionTracker\\EmotionTrackerView.axaml.cs",
               "RelativeDocumentMoniker": "EmotionTracker.Client\\Views\\EmotionTracker\\EmotionTrackerView.axaml.cs",
@@ -339,7 +360,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "MainWindowView.axaml.cs",
               "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.Client\\Views\\MainWindowView.axaml.cs",
               "RelativeDocumentMoniker": "EmotionTracker.Client\\Views\\MainWindowView.axaml.cs",
@@ -351,7 +372,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "ViewModelModule.cs",
               "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.Client\\Modules\\ViewModelModule.cs",
               "RelativeDocumentMoniker": "EmotionTracker.Client\\Modules\\ViewModelModule.cs",
@@ -363,7 +384,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "RegistrationServices.cs",
               "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.Client\\Services\\RegistrationServices.cs",
               "RelativeDocumentMoniker": "EmotionTracker.Client\\Services\\RegistrationServices.cs",
@@ -375,7 +396,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "app.manifest",
               "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.Client\\app.manifest",
               "RelativeDocumentMoniker": "EmotionTracker.Client\\app.manifest",
@@ -387,7 +408,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "ViewModelBase.cs",
               "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.UI\\ViewModelBase.cs",
               "RelativeDocumentMoniker": "EmotionTracker.UI\\ViewModelBase.cs",
@@ -399,7 +420,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "ViewLocator.cs",
               "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.UI\\ViewLocator.cs",
               "RelativeDocumentMoniker": "EmotionTracker.UI\\ViewLocator.cs",
@@ -411,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "Resolver.cs",
               "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.UI\\Resolver.cs",
               "RelativeDocumentMoniker": "EmotionTracker.UI\\Resolver.cs",
@@ -423,7 +444,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "ReactiveViewModelBase.cs",
               "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.UI\\ReactiveViewModelBase.cs",
               "RelativeDocumentMoniker": "EmotionTracker.UI\\ReactiveViewModelBase.cs",
@@ -435,7 +456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "EmotionTracker.ui.csproj",
               "DocumentMoniker": "C:\\Users\\d4nym\\source\\repos\\EmotionTracker\\EmotionTracker.UI\\EmotionTracker.ui.csproj",
               "RelativeDocumentMoniker": "EmotionTracker.UI\\EmotionTracker.ui.csproj",
@@ -443,8 +464,7 @@
               "RelativeToolTip": "EmotionTracker.UI\\EmotionTracker.ui.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-07-02T16:31:04.576Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-02T16:31:04.576Z"
             }
           ]
         }
