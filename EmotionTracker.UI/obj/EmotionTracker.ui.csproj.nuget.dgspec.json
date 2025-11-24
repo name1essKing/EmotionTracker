@@ -50,25 +50,41 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Avalonia": {
+              "target": "Package",
+              "version": "[11.3.2, )"
+            },
+            "Avalonia.Controls.DataGrid": {
+              "target": "Package",
+              "version": "[11.3.2, )"
+            },
+            "Avalonia.Desktop": {
+              "target": "Package",
+              "version": "[11.3.2, )"
+            },
             "Avalonia.Diagnostics": {
               "target": "Package",
-              "version": "[11.0.0, )"
+              "version": "[11.3.2, )"
             },
             "Avalonia.Fonts.Inter": {
               "target": "Package",
-              "version": "[11.0.0, )"
+              "version": "[11.3.2, )"
             },
             "Avalonia.ReactiveUI": {
               "target": "Package",
-              "version": "[11.0.0, )"
+              "version": "[11.3.2, )"
+            },
+            "Avalonia.Skia": {
+              "target": "Package",
+              "version": "[11.3.2, )"
             },
             "Avalonia.Themes.Fluent": {
               "target": "Package",
-              "version": "[11.0.0, )"
+              "version": "[11.3.2, )"
             },
-            "Avalonia.Xaml.Interactivity": {
+            "Xaml.Behaviors.Interactivity": {
               "target": "Package",
-              "version": "[11.0.10.9, )"
+              "version": "[11.3.2, )"
             }
           },
           "imports": [

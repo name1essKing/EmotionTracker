@@ -6,6 +6,6 @@
 
 	<Application.Styles>
 		<FluentTheme />
-		<StyleInclude Source="avares://EmotionTracker.UI/Styles/Styles.axaml" />
+		<StyleInclude Source="avares://EmotionTracker.ui/Styles/Styles.axaml" />
 	</Application.Styles>
 </Application>

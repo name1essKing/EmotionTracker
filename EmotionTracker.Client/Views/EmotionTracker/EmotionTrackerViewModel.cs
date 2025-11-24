@@ -1,4 +1,5 @@
-﻿using EmotionTracker.ui;
+﻿using DynamicData;
+using EmotionTracker.ui;
 using ReactiveUI;
 using System;
 using System.Collections.Generic;
@@ -7,98 +8,154 @@ namespace EmotionTracker.Client.Views.EmotionTracker
 {
     public sealed partial class EmotionTrackerViewModel : ReactiveViewModelBase
     {
+        private readonly SourceCache<EmotionItem, DateTime> _emotionRecords = new(x => x.DateTime);
+
         private bool _isEmotionSelected;
 
-        // Флаг для отслеживания, выбрана ли эмоция
+        private DateTime _selectedDate;
+
+        private EmotionItem _currentEmotionForDate;
+
+        private EmotionItem _selectedEmotionRecord;
+
+
+
+        public SourceCache<EmotionItem, DateTime> EmotionRecords => _emotionRecords;
+
+        /// <summary>
+        /// Флаг для отслеживания, выбрана ли эмоция
+        /// </summary>
         public bool IsEmotionSelected
         {
             get => _isEmotionSelected;
             set => this.RaiseAndSetIfChanged(ref _isEmotionSelected, value);
         }
-
-        private DateTime _selectedDate;
-        // Выбранная дата
+        
+        /// <summary>
+        /// Выбранная дата
+        /// </summary>
         public DateTime SelectedDate
         {
             get => _selectedDate;
             set
             {
                 this.RaiseAndSetIfChanged(ref _selectedDate, value);
-                CheckEmotionForSelectedDate();
             }
         }
-
-        private EmotionItem _currentEmotionForDate;
-        // Текущая эмоция для выбранной даты
+        
+        /// <summary>
+        /// Текущая эмоция для выбранной даты
+        /// </summary>
         public EmotionItem CurrentEmotionForDate
         {
             get => _currentEmotionForDate;
             set => this.RaiseAndSetIfChanged(ref _currentEmotionForDate, value);
         }
-
-        // Словарь для хранения эмоций по датам
-        public Dictionary<DateTime, EmotionItem> EmotionRecords { get; } = new();
-
-        private EmotionItem _selectedEmotionRecord;
-        // Выбранная эмоция (для UI)
+        
+        /// <summary>
+        ///  Выбранная эмоция (для UI)
+        /// </summary>
         public EmotionItem SelectedEmotionRecord
         {
             get => _selectedEmotionRecord;
             set => this.RaiseAndSetIfChanged(ref _selectedEmotionRecord, value);
         }
-        // Конструктор
+
+        /// <summary>
+        /// Конструктор
+        /// </summary>
         public EmotionTrackerViewModel()
         {
             SelectedDate = DateTime.Today;
-            CheckEmotionForSelectedDate();
         }
-        // Метод для проверки и обновления эмоции для выбранной даты
+
+        /// <summary>
+        /// Метод для проверки и обновления эмоции для выбранной даты
+        /// </summary>
         public void CheckEmotionForSelectedDate()
         {
             if (SelectedDate == default)
             {
-                CurrentEmotionForDate = new EmotionItem(EmotionEnum.None);
                 return;
             }
 
-            EmotionRecords.TryGetValue(SelectedDate.Date, out var emotion);
-            CurrentEmotionForDate = emotion ?? new EmotionItem(EmotionEnum.None);
+            var emotion = EmotionRecords.Lookup(SelectedDate.Date).Value;
         }
-        // Методы для выбора эмоций
+
+        /// <summary>
+        /// Метод для выбора счастливой эмоции
+        /// </summary>
         public void SelectHappy()
         {
             if (SelectedDate == default) return;
 
-            var happyItem = new EmotionItem(EmotionEnum.Happy);
-            EmotionRecords[SelectedDate.Date] = happyItem;
-            CurrentEmotionForDate = happyItem;
+            var item = EmotionRecords.Lookup(SelectedDate.Date);
+            var emotion = EmotionEnum.Happy;
+            if (!item.HasValue)
+            {
+                EmotionRecords.AddOrUpdate(new EmotionItem(SelectedDate.Date, emotion));
+            }
+            else
+            {
+                EmotionRecords.Lookup(SelectedDate.Date).Value.SelectedEmotion = emotion;
+            }
         }
-        // Метод для выбора нейтральной эмоции
+
+        /// <summary>
+        /// Метод для выбора нейтральной эмоции
+        /// </summary>
         public void SelectNeutral()
         {
             if (SelectedDate == default) return;
 
-            var neutralItem = new EmotionItem(EmotionEnum.Neutral);
-            EmotionRecords[SelectedDate.Date] = neutralItem;
-            CurrentEmotionForDate = neutralItem;
+            var item = EmotionRecords.Lookup(SelectedDate.Date);
+            var emotion = EmotionEnum.Neutral;
+            if (!item.HasValue)
+            {
+                EmotionRecords.AddOrUpdate(new EmotionItem(SelectedDate.Date, emotion));
+            }
+            else
+            {
+                EmotionRecords.Lookup(SelectedDate.Date).Value.SelectedEmotion = emotion;
+            }
         }
-        // Метод для выбора грустной эмоции
+
+        /// <summary>
+        /// Метод для выбора грустной эмоции
+        /// </summary>
         public void SelectSad()
         {
             if (SelectedDate == default) return;
 
-            var sadItem = new EmotionItem(EmotionEnum.Sad);
-            EmotionRecords[SelectedDate.Date] = sadItem;
-            CurrentEmotionForDate = sadItem;
+            var item = EmotionRecords.Lookup(SelectedDate.Date);
+            var emotion = EmotionEnum.Sad;
+            if (!item.HasValue)
+            {
+                EmotionRecords.AddOrUpdate(new EmotionItem(SelectedDate.Date, emotion));
+            }
+            else
+            {
+                EmotionRecords.Lookup(SelectedDate.Date).Value.SelectedEmotion = emotion;
+            }
         }
-        // Метод для очистки эмоции
+
+        /// <summary>
+        /// Метод для очистки эмоции
+        /// </summary>
         public void ClearEmotion()
         {
             if (SelectedDate == default) return;
 
-            var noneEmotion = new EmotionItem(EmotionEnum.None);
-            EmotionRecords[SelectedDate.Date] = noneEmotion;
-            CurrentEmotionForDate = noneEmotion;
+            var item = EmotionRecords.Lookup(SelectedDate.Date);
+            var emotion = EmotionEnum.None;
+            if (!item.HasValue)
+            {
+                EmotionRecords.AddOrUpdate(new EmotionItem(SelectedDate.Date, emotion));
+            }
+            else
+            {
+                EmotionRecords.Lookup(SelectedDate.Date).Value.SelectedEmotion = emotion;
+            }
         }
     }
 }

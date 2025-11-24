@@ -63,12 +63,9 @@
 										BorderThickness="0"
 										ClipToBounds="True"
 										Classes="happy"
-										Classes.happy="{Binding SelectedEmotionRecord.SelectedEmotion, 
-											Converter={StaticResource EmotionToHappyConverter}}"
-										Classes.neutral="{Binding SelectedEmotionRecord.SelectedEmotion, 
-											Converter={StaticResource EmotionToNeutralConverter}}"
-										Classes.sad="{Binding SelectedEmotionRecord.SelectedEmotion, 
-											Converter={StaticResource EmotionToSadConverter}}">
+										Classes.happy="{Binding SelectedEmotionRecord.SelectedEmotion, Converter={StaticResource EmotionToHappyConverter}}"
+										Classes.neutral="{Binding SelectedEmotionRecord.SelectedEmotion, Converter={StaticResource EmotionToNeutralConverter}}"
+										Classes.sad="{Binding SelectedEmotionRecord.SelectedEmotion, Converter={StaticResource EmotionToSadConverter}}">
 
 
 									<ContentPresenter Name="PART_ContentPresenter"
@@ -103,12 +100,9 @@
 										BorderThickness="0"
 										ClipToBounds="True"
 										Classes="neutral"
-										Classes.happy="{Binding SelectedEmotionRecord.SelectedEmotion, 
-											Converter={StaticResource EmotionToHappyConverter}}"
-										Classes.neutral="{Binding SelectedEmotionRecord.SelectedEmotion, 
-											Converter={StaticResource EmotionToNeutralConverter}}"
-										Classes.sad="{Binding SelectedEmotionRecord.SelectedEmotion, 
-											Converter={StaticResource EmotionToSadConverter}}">
+										Classes.happy="{Binding SelectedEmotionRecord.SelectedEmotion, Converter={StaticResource EmotionToHappyConverter}}"
+										Classes.neutral="{Binding SelectedEmotionRecord.SelectedEmotion, Converter={StaticResource EmotionToNeutralConverter}}"
+										Classes.sad="{Binding SelectedEmotionRecord.SelectedEmotion, Converter={StaticResource EmotionToSadConverter}}">
 
 
 									<ContentPresenter Name="PART_ContentPresenter"
@@ -142,12 +136,9 @@
 										BorderThickness="0"
 										ClipToBounds="True"
 										Classes="sad"
-										Classes.happy="{Binding SelectedEmotionRecord.SelectedEmotion, 
-											Converter={StaticResource EmotionToHappyConverter}}"
-										Classes.neutral="{Binding SelectedEmotionRecord.SelectedEmotion, 
-											Converter={StaticResource EmotionToNeutralConverter}}"
-										Classes.sad="{Binding SelectedEmotionRecord.SelectedEmotion, 
-											Converter={StaticResource EmotionToSadConverter}}">
+										Classes.happy="{Binding SelectedEmotionRecord.SelectedEmotion, Converter={StaticResource EmotionToHappyConverter}}"
+										Classes.neutral="{Binding SelectedEmotionRecord.SelectedEmotion, Converter={StaticResource EmotionToNeutralConverter}}"
+										Classes.sad="{Binding SelectedEmotionRecord.SelectedEmotion, Converter={StaticResource EmotionToSadConverter}}">
 
 
 									<ContentPresenter Name="PART_ContentPresenter"
