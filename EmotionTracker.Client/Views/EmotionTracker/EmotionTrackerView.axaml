@@ -1,10 +1,11 @@
-<UserControl xmlns="https://github.com/avaloniaui"
+﻿<UserControl xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:tracker="clr-namespace:EmotionTracker.Client.Views.EmotionTracker"
-             xmlns:converters="using:EmotionTracker.UI.Converters"
+			 xmlns:i="clr-namespace:Avalonia.Xaml.Interactivity;assembly=Xaml.Behaviors.Interactivity" 
              xmlns:local="using:EmotionTracker.Client.Views.EmotionTracker"
+			 xmlns:behaviors="using:EmotionTracker.Client.Behaviors"
              mc:Ignorable="d" 
              x:Class="EmotionTracker.Client.Views.EmotionTrackerView"
 			 xmlns:vm="using:EmotionTracker.Client.Views.EmotionTracker">
@@ -12,62 +13,40 @@
 	<Design.DataContext>
 		<local:EmotionTrackerViewModel/>
 	</Design.DataContext>
-
+	
 	<Grid RowDefinitions="*" ColumnDefinitions="*">
 		<!-- Календарь с контекстным меню -->
 		<Calendar SelectedDate="{Binding SelectedDate}"
-          Classes="DarkTheme"
+				  DataContext="{Binding}"
+			      Classes="DarkTheme"
 				  Name="MyCalendar">
 			<Calendar.Styles>
-				<!--default-->
-				<Style Selector="CalendarDayButton"> <!--вставляю сюда стили-->
-				<Setter Property="Template">
-					<ControlTemplate>
-						<Panel>
-							<!-- менять тут -->
-							<Border Name="Root" 
-									Background="{TemplateBinding Background}"
-									BorderThickness="0" 
-									ClipToBounds="True">
-
-
-							<ContentPresenter Name="PART_ContentPresenter"
-												  ContentTemplate="{TemplateBinding ContentTemplate}"
-												  Content="{TemplateBinding Content}"
-												  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-												  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-												  Margin="{TemplateBinding Padding}" />
-
-							</Border>
-
-							<!-- Drawn Border should render on top of background to preserve the 1px margin between items-->
-							<Border Name="Border"
-									BorderThickness="2"
-									BorderBrush="{TemplateBinding BorderBrush}" />
-						</Panel>
-					</ControlTemplate>
-				</Setter>
-				<Setter Property="Command"          Value="{Binding SelectDateCommand}"/>
-				<Setter Property="CommandParameter" Value="{Binding Date}"/>
-				</Style>
-				
-				<!-- happy -->
-				<Style Selector="CalendarDayButton.happy">
-					<!--вставляю сюда стили-->
+				<Style Selector="CalendarDayButton"> 
+					<Style Selector="^ Border"> 
+						<Style Selector="^.sad">
+							<Setter Property="Background" Value="Red"/>
+						</Style>
+						<Style Selector="^.happy">
+							<Setter Property="Background" Value="Green"/>
+						</Style>
+						<Style Selector="^.neutral">
+							<Setter Property="Background" Value="Yellow"/>
+						</Style> 
+					</Style> 
 					<Setter Property="Template">
 						<ControlTemplate>
 							<Panel>
-								<!-- менять тут -->
-								<Border Name="Root"
+								<Border Name="Root" 
 										Background="{TemplateBinding Background}"
-										BorderThickness="0"
-										ClipToBounds="True"
-										Classes="happy"
-										Classes.happy="{Binding SelectedEmotionRecord.SelectedEmotion, Converter={StaticResource EmotionToHappyConverter}}"
-										Classes.neutral="{Binding SelectedEmotionRecord.SelectedEmotion, Converter={StaticResource EmotionToNeutralConverter}}"
-										Classes.sad="{Binding SelectedEmotionRecord.SelectedEmotion, Converter={StaticResource EmotionToSadConverter}}">
+										BorderThickness="0" 
+										ClipToBounds="True">
 
-
+										<i:Interaction.Behaviors>
+										    <behaviors:CalendarDayStateUpdateBehavior 
+											ItemDay="{Binding}"
+											RecordedEmotions="{Binding $parent[Calendar].DataContext.EmotionRecords, Mode=TwoWay}"/>
+										</i:Interaction.Behaviors>
+									 
 									<ContentPresenter Name="PART_ContentPresenter"
 													  ContentTemplate="{TemplateBinding ContentTemplate}"
 													  Content="{TemplateBinding Content}"
@@ -83,89 +62,15 @@
 										BorderBrush="{TemplateBinding BorderBrush}" />
 							</Panel>
 						</ControlTemplate>
-					</Setter>
-					<Setter Property="Command"          Value="{Binding SelectDateCommand}"/>
-					<Setter Property="CommandParameter" Value="{Binding Date}"/>
-				</Style>
-				
-				<!--neutral-->
-				<Style Selector="CalendarDayButton.neutral">
-					<!--вставляю сюда стили-->
-					<Setter Property="Template">
-						<ControlTemplate>
-							<Panel>
-								<!-- менять тут -->
-								<Border Name="Root"
-										Background="{TemplateBinding Background}"
-										BorderThickness="0"
-										ClipToBounds="True"
-										Classes="neutral"
-										Classes.happy="{Binding SelectedEmotionRecord.SelectedEmotion, Converter={StaticResource EmotionToHappyConverter}}"
-										Classes.neutral="{Binding SelectedEmotionRecord.SelectedEmotion, Converter={StaticResource EmotionToNeutralConverter}}"
-										Classes.sad="{Binding SelectedEmotionRecord.SelectedEmotion, Converter={StaticResource EmotionToSadConverter}}">
-
-
-									<ContentPresenter Name="PART_ContentPresenter"
-													  ContentTemplate="{TemplateBinding ContentTemplate}"
-													  Content="{TemplateBinding Content}"
-													  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-													  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-													  Margin="{TemplateBinding Padding}" />
-								</Border>
-
-								<!-- Drawn Border should render on top of background to preserve the 1px margin between items-->
-								<Border Name="Border"
-										BorderThickness="2"
-										BorderBrush="{TemplateBinding BorderBrush}" />
-							</Panel>
-						</ControlTemplate>
-					</Setter>
-					<Setter Property="Command"          Value="{Binding SelectDateCommand}"/>
-					<Setter Property="CommandParameter" Value="{Binding Date}"/>
-				</Style>
-
-				<!--sad-->
-				<Style Selector="CalendarDayButton.sad">
-					<!--вставляю сюда стили-->
-					<Setter Property="Template">
-						<ControlTemplate>
-							<Panel>
-								<!-- менять тут -->
-								<Border Name="Root"
-										Background="{TemplateBinding Background}"
-										BorderThickness="0"
-										ClipToBounds="True"
-										Classes="sad"
-										Classes.happy="{Binding SelectedEmotionRecord.SelectedEmotion, Converter={StaticResource EmotionToHappyConverter}}"
-										Classes.neutral="{Binding SelectedEmotionRecord.SelectedEmotion, Converter={StaticResource EmotionToNeutralConverter}}"
-										Classes.sad="{Binding SelectedEmotionRecord.SelectedEmotion, Converter={StaticResource EmotionToSadConverter}}">
-
-
-									<ContentPresenter Name="PART_ContentPresenter"
-													  ContentTemplate="{TemplateBinding ContentTemplate}"
-													  Content="{TemplateBinding Content}"
-													  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-													  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
-													  Margin="{TemplateBinding Padding}" />
-
-								</Border>
-
-								<!-- Drawn Border should render on top of background to preserve the 1px margin between items-->
-								<Border Name="Border"
-										BorderThickness="2"
-										BorderBrush="{TemplateBinding BorderBrush}" />
-							</Panel>
-						</ControlTemplate>
-					</Setter>
-					<Setter Property="Command"          Value="{Binding SelectDateCommand}"/>
-					<Setter Property="CommandParameter" Value="{Binding Date}"/>
-				</Style>
+					</Setter> 
+				</Style> 
 			</Calendar.Styles>
 			
 			<Calendar.ContextMenu>
 				<ContextMenu DataContext="{Binding #MyCalendar.DataContext}">
 					<MenuItem Header=":)"
-							  Command="{Binding SelectHappy}"
+							  Command="{Binding Commands.SelectHappy}" 
+							  CommandParameter="{Binding}"
 							  Classes ="happy"/>
 
 					<MenuItem Header=":|"
